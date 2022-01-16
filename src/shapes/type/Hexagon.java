@@ -1,4 +1,5 @@
 package shapes.type;
+
 import graphic.editor.Shape;
 
 public class Hexagon extends Shape {
@@ -6,9 +7,11 @@ public class Hexagon extends Shape {
     private int g;
     private int b;
     private double value;
+    private double scale;
 
     public Hexagon() {
     }
+
     public Hexagon(String name, double x, double y) {
         super(name, x, y);
     }
@@ -48,16 +51,16 @@ public class Hexagon extends Shape {
 
     @Override
     public void moveToPosition(double x, double y) {
-        System.out.println(getName() + " moved to position - x = "  + x + ", y = " + y);
+        System.out.println(getName() + " moved to position - x = " + x + ", y = " + y);
     }
 
     @Override
-    public double getScale(double scale) {
+    public void setScale(double scale) {
+        this.scale = scale;
+    }
+
+    @Override
+    public double getScale() {
         return scale;
-    }
-
-    @Override
-    public void delete(Object x) {
-        System.out.println("Selected " + x + " deleted!");
     }
 }

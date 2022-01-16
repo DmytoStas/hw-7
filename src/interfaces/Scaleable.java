@@ -1,5 +1,7 @@
 package interfaces;
 
 public interface Scaleable {
-    double getScale(double scale);
+    void setScale(double scale);
+
+    double getScale();
 }

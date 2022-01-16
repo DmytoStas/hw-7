@@ -7,6 +7,7 @@ public class Quad extends Shape {
     private int g;
     private int b;
     private double value;
+    private double scale;
 
     public Quad() {
     }
@@ -54,12 +55,12 @@ public class Quad extends Shape {
     }
 
     @Override
-    public double getScale(double scale) {
-        return scale;
+    public void setScale(double scale) {
+        this.scale = scale;
     }
 
     @Override
-    public void delete(Object x) {
-        System.out.println("Selected " + x + " deleted!");
+    public double getScale() {
+        return scale;
     }
 }

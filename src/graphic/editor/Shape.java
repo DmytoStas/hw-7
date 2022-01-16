@@ -1,10 +1,9 @@
 package graphic.editor;
 import interfaces.Borderable;
-import interfaces.Deleteable;
 import interfaces.Moveable;
 import interfaces.Scaleable;
 
-public abstract class Shape implements Borderable, Deleteable, Moveable, Scaleable, Cloneable {
+public abstract class Shape implements Borderable, Moveable, Scaleable {
     private double x;
     private double y;
     private String name;
