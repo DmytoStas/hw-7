@@ -1,5 +1,5 @@
-package shapesType;
-import graphicEditor.Shape;
+package shapes.type;
+import graphic.editor.Shape;
 
 public class Circle extends Shape {
     private int r;

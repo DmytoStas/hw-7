@@ -1,17 +1,15 @@
-package shapesType;
+package shapes.type;
+import graphic.editor.Shape;
 
-import graphicEditor.Shape;
-
-public class Quad extends Shape {
+public class Hexagon extends Shape {
     private int r;
     private int g;
     private int b;
     private double value;
 
-    public Quad() {
+    public Hexagon() {
     }
-
-    public Quad(String name, double x, double y) {
+    public Hexagon(String name, double x, double y) {
         super(name, x, y);
     }
 
@@ -50,7 +48,7 @@ public class Quad extends Shape {
 
     @Override
     public void moveToPosition(double x, double y) {
-        System.out.println(getName() + " moved to position - x = " + x + ", y = " + y);
+        System.out.println(getName() + " moved to position - x = "  + x + ", y = " + y);
     }
 
     @Override

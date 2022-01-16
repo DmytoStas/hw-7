@@ -1,15 +1,15 @@
-package shapesType;
-import graphicEditor.Shape;
+package shapes.type;
+import graphic.editor.Shape;
 
-public class Triangle extends Shape {
+public class Rhombus extends Shape {
 private int r;
 private int g;
 private int b;
 private double value;
 
-public Triangle() {
+public Rhombus() {
         }
-public Triangle(String name, double x, double y) {
+public Rhombus(String name, double x, double y) {
         super(name, x, y);
         }
 

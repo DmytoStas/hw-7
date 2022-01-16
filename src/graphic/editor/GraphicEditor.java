@@ -1,18 +1,16 @@
-package graphicEditor;
-
-import shapesType.Circle;
-import shapesType.Hexagon;
-import shapesType.Quad;
-import shapesType.Rhombus;
-import shapesType.Triangle;
-
+package graphic.editor;
+import shapes.type.Circle;
+import shapes.type.Hexagon;
+import shapes.type.Triangle;
+import shapes.type.Quad;
+import shapes.type.Rhombus;
 public class GraphicEditor {
     public static void main(String[] args) {
 
         //Create Shape
         //Can be Circle, Hexagon, Quad, Rhombus, Triangle
-        Shape shape = new Triangle();
-        shape.setName("Triangle");
+        Shape shape = new Rhombus();
+        shape.setName("Rhombus");
         shape.setX(4);
         shape.setY(8.9);
         System.out.println(shape.getName() + " created at position - x = " + shape.getX() + ", y = " + shape.getY());
@@ -33,8 +31,8 @@ public class GraphicEditor {
         //Clone shape
         Shape clone = null;
         try {
-            clone = (Shape) ((Triangle) shape).clone();
-            clone.setName("Triangle(clone)");
+            clone = (Shape) ((Rhombus) shape).clone();
+            clone.setName("Rhombus(clone)");
             clone.setX(30.3);
             clone.setY(80.5);
             System.out.println(clone.getName() + " created at position x - " + clone.getX() + " y - " + clone.getY());
@@ -53,7 +51,7 @@ public class GraphicEditor {
 
         //Create other Shape
         //Can be Circle, Hexagon, Quad, Rhombus, Triangle
-        Shape shape1 = new Circle("Triangle - 2", 6.3, 8.5);
+        Shape shape1 = new Rhombus("Triangle - 2", 6.3, 8.5);
         System.out.println(shape1.getName() + " created at position - x = " + shape1.getX() + ", y = " + shape1.getY());
     }
 }

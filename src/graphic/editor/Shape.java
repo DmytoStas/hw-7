@@ -1,4 +1,4 @@
-package graphicEditor;
+package graphic.editor;
 import interfaces.Borderable;
 import interfaces.Deleteable;
 import interfaces.Moveable;
