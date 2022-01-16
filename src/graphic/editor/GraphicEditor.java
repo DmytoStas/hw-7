@@ -9,44 +9,30 @@ public class GraphicEditor {
 
         //Create Shape
         //Can be Circle, Hexagon, Quad, Rhombus, Triangle
-        Shape shape = new Rhombus();
-        shape.setName("Rhombus");
-        shape.setX(4);
-        shape.setY(8.9);
-        System.out.println(shape.getName() + " created at position - x = " + shape.getX() + ", y = " + shape.getY());
+        Shape rhombus = new Rhombus();
+        rhombus.setName("Rhombus");
+        rhombus.setX(4);
+        rhombus.setY(8.9);
+        System.out.println(rhombus.getName() + " created at position - x = " + rhombus.getX() + ", y = " + rhombus.getY());
 
         //Set shape color
-        shape.setShapeColor(255,96,87);
-        System.out.println("Shape color is - " + shape.getShapeColor());
-        //System.out.println("Shape color - " + shape1.setColor(););
+        rhombus.setShapeColor(255,96,87);
+        System.out.println("Shape color is - " + rhombus.getShapeColor());
 
         //Set Border
-        shape.setBorderColor(88,55,66);
-        shape.setBorderWidth(5.5);
-        System.out.println("Border settings: \ncolor - " + shape.getBorderColor() + "\nwidth - " + shape.getBorderWidth());
+        rhombus.setBorderColor(88,55,66);
+        rhombus.setBorderWidth(5.5);
+        System.out.println("Border settings: \ncolor - " + rhombus.getBorderColor() + "\nwidth - " + rhombus.getBorderWidth());
 
         //Set scale
-        System.out.println("Scale is - " + shape.getScale(100));
-
-        //Clone shape
-        Shape clone = null;
-        try {
-            clone = (Shape) ((Rhombus) shape).clone();
-            clone.setName("Rhombus(clone)");
-            clone.setX(30.3);
-            clone.setY(80.5);
-            System.out.println(clone.getName() + " created at position x - " + clone.getX() + " y - " + clone.getY());
-
-        } catch (CloneNotSupportedException e) {
-            System.out.println("The object cannot be cloned");
-        }
+        System.out.println("Scale is - " + rhombus.getScale(100));
 
         //Move shape
-        clone.moveToPosition(100.3,289.7);
+        rhombus.moveToPosition(100.3,289.7);
 
         //Delete shape
-        clone.delete(clone.getName());
-        clone = null;
+        rhombus.delete(rhombus.getName());
+        rhombus = null;
         System.gc();
 
         //Create other Shape
